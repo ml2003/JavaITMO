@@ -1,9 +1,9 @@
 package training3;
 
 public class JavaProgram {
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
-        Study study = new Study ("Изучение Java - это просто!");
+        Study study = new Study("Изучение Java - это просто!");
 
         System.out.println(study.printCourse());
 
@@ -27,13 +27,21 @@ public class JavaProgram {
         System.out.println(car4);
 
 
-        House house =new House();
+        House house = new House();
         house.setAll(5, 1980, "Первый");
         House house2 = new House();
         house2.setAll(12, 1988, "Второй");
 
         System.out.println(house + " лет с постройки = " + house.getYearsFromBuild());
         System.out.println(house2 + " лет с постройки = " + house2.getYearsFromBuild());
+
+
+        Tree tree = new Tree();
+        Tree tree2 = new Tree("Дуб", 150);
+        Tree tree3 = new Tree("Береза", true, 35);
+        System.out.println(tree);
+        System.out.println(tree2);
+        System.out.println(tree3);
 
     }
 }
