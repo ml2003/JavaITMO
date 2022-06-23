@@ -26,5 +26,14 @@ public class JavaProgram {
         System.out.println(car3);
         System.out.println(car4);
 
+
+        House house =new House();
+        house.setAll(5, 1980, "Первый");
+        House house2 = new House();
+        house2.setAll(12, 1988, "Второй");
+
+        System.out.println(house + " лет с постройки = " + house.getYearsFromBuild());
+        System.out.println(house2 + " лет с постройки = " + house2.getYearsFromBuild());
+
     }
 }
