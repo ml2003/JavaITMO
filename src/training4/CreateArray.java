@@ -12,7 +12,7 @@ public class CreateArray {
 
         if (scanner.hasNextInt()) {
             int l = scanner.nextInt();
-            if (l> 0) {
+            if (l > 0) {
                 length = l;
             } else System.out.println("Размер не может быть меньше 1");
         } else {
@@ -24,18 +24,15 @@ public class CreateArray {
             System.out.println("Numbers of array:");
 
             for (int i = 0; i < length; i++) {
-                 if (scanner.hasNextInt()) {
-                     arr[i] = scanner.nextInt();
-                }
-                 else {
-                     arr[i]=0;
-                    System.out.println("В массив ожидается целое число, замена на 0");
+                if (scanner.hasNextInt()) {
+                    arr[i] = scanner.nextInt();
                 }
             }
+
 
             System.out.println("Result : " + Arrays.toString(arr));
         }
 
-
     }
-}
+    }
+
