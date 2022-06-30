@@ -28,7 +28,7 @@ public class ReplaceWord {
         System.out.println(customReplaceAll(str, "бяка", "[вырезано цензурой]"));
 
 
-        //вариант 3 case sensitive
+
 
     }
 
