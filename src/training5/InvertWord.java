@@ -9,7 +9,8 @@ public class InvertWord {
         StringBuilder reverseWord = new StringBuilder();
 
         for (int i = words.length - 1; i >= 0; i--) reverseWord.append(words[i]).append(" ");
-        System.out.println(reverseWord);
+        System.out.println("The given string is : " + str);
+        System.out.println("The string reversed word by word is : " + reverseWord);
 
     }
 }
