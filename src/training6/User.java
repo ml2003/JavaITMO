@@ -3,10 +3,14 @@ package training6;
 import java.util.Scanner;
 
 public abstract class User {
-    private String name;
+
+    Scanner scanner = new Scanner(System.in);
+
     private int age;
 
-
+    public void printAge() {
+        System.out.println(age);
+    }
 
     public int getAge() {
         return age;
@@ -16,18 +20,20 @@ public abstract class User {
         this.age = age;
     }
 
-    public void setAgeFromConsole(){
+    public String getFromConsole() {
+        System.out.println("Введите что-то:");
         Scanner scanner = new Scanner(System.in);
-        this.age =  scanner.nextInt();
+        String str = scanner.nextLine();
         scanner.close();
+        return str;
+    }
+
+    public void getInfo(){
+        System.out.println("Введите:");
+        Integer str = scanner.nextInt();
+        System.out.println(str);
+
     }
 
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
 }
